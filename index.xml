@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Riddey - coming soon on Riddey - the whiteboard</title>
+    <title>Riddey on Riddey - the whiteboard</title>
     <link>https://riddey.com/</link>
-    <description>Recent content in Riddey - coming soon on Riddey - the whiteboard</description>
+    <description>Recent content in Riddey on Riddey - the whiteboard</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Feb 2021 18:48:28 -0600</lastBuildDate><atom:link href="https://riddey.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://riddey.com/privacy-policy/</link>
+      <pubDate>Sat, 22 May 2021 18:48:28 -0600</pubDate>
+      
+      <guid>https://riddey.com/privacy-policy/</guid>
+      <description>Privacy Policy Last updated: 05/22/2021   This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from https://riddey.com  (the &#34;Site&#34;).  Personal Information We Collect  When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device.</description>
+    </item>
+    
+    <item>
+      <title>Terms of Use</title>
+      <link>https://riddey.com/terms-of-use/</link>
+      <pubDate>Sat, 22 May 2021 18:48:28 -0600</pubDate>
+      
+      <guid>https://riddey.com/terms-of-use/</guid>
+      <description>Terms of Use Last update on 11/30/2020 Introduction  Welcome to Coolboard LLC, incorporated in State of California (registration number 202017810394) having its registered address at 1267 Willis St Suite 200, Redding, California, United States, post code: 96001 (&#34;Riddey&#34;, &#34;Company&#34;, &#34;we&#34;, &#34;our&#34;, &#34;us&#34;)!  These Terms and Conditions of Use govern your use of our web pages located at https://riddey.com  and our software operated by Coolboard LLC that performs functions of a visual collaboration space.</description>
+    </item>
+    
+    <item>
+      <title>Pricing</title>
+      <link>https://riddey.com/pricing/</link>
+      <pubDate>Mon, 22 Feb 2021 18:48:28 -0600</pubDate>
+      
+      <guid>https://riddey.com/pricing/</guid>
+      <description>  Pricing Riddey is in beta at the moment. This means it&#39;s completely free, however you need an invitation to join.   Thank you! We received your request.  Something went wrong.  Let me join! Try again      Contact us    Terms &amp; Conditions    Policy    Copyright &amp;copy; 2021 Riddey    </description>
+    </item>
+    
   </channel>
 </rss>
