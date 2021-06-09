@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Newsletters on Collaborate with you remote team | Riddey</title>
+    <link>https://riddey.com/newsletter/</link>
+    <description>Recent content in Newsletters on Collaborate with you remote team | Riddey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://riddey.com/newsletter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Goodbye Coolboard, say hello to Riddey</title>
+      <link>https://riddey.com/newsletter/v1.0-beta-released/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://riddey.com/newsletter/v1.0-beta-released/</guid>
+      <description>Goodbye Coolboard, say hello to Riddey  During the last couple of months, many fantastic and exciting things happened to us that we want to share with you.
+    Meet Riddey, the wombat Our original intention was to create a whiteboard that makes people&#39;s life easier by its superior UI. Then we recognized that we could do more. So we extended our scope from just a whiteboard to a visual collaboration space.</description>
+    </item>
+    
+  </channel>
+</rss>
