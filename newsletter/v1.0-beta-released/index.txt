@@ -59,6 +59,7 @@ the Riddey team
 
 -------------------------------------------------------------------------------------------------------------
 You received this email because you subscribed to our newsletter or because you signed up for the application.
+Unsubscribe: %tag_unsubscribe_url%
 Contact us: hello@riddey.com
 Privacy policy: https://riddey.com/privacy-policy/
 Coolboard LLC, PO BOX #2420 Cupertino, CA 5015

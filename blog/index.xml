@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello Friend, on Collaborate with you remote team | Riddey</title>
+    <link>https://riddey.com/blog/</link>
+    <description>Recent content in Hello Friend, on Collaborate with you remote team | Riddey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://riddey.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>We have just released our private beta</title>
+      <link>https://riddey.com/blog/changes/v1.0-beta-release-notes/</link>
+      <pubDate>Fri, 11 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://riddey.com/blog/changes/v1.0-beta-release-notes/</guid>
+      <description>v1.0-beta is out  We have been working very hard since the last release to deliver as much value as possible. So I proudly announce that our private beta is up and running. You need an invite to sign up, so if you don&amp;rsquo;t have but want one:
+Request Invite In this release, we delivered the following:
+Rebranding Our original intention was to create a whiteboard that makes people&amp;rsquo;s life easier by its superior UI.</description>
+    </item>
+    
+  </channel>
+</rss>
