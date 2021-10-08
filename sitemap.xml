@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://riddey.com/categories/announcements/</loc>
-    <lastmod>2021-06-11T09:30:56-05:00</lastmod>
+    <loc>https://riddey.com/categories/articles/</loc>
+    <lastmod>2021-10-08T02:33:49+02:00</lastmod>
   </url>
 
   <url>
     <loc>https://riddey.com/categories/</loc>
+    <lastmod>2021-10-08T02:33:49+02:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://riddey.com/blog/articles/why-it-is-hard-to-draw-with-a-mouse/</loc>
+    <lastmod>2021-10-08T02:33:49+02:00</lastmod>
+  </url>
+
+  <url>
+    <loc>https://riddey.com/categories/announcements/</loc>
     <lastmod>2021-06-11T09:30:56-05:00</lastmod>
   </url>
 

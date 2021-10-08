@@ -25,6 +25,7 @@ it here:
 
 https://riddey.com/pricing?utm_campaign=v1.0-beta-released&utm_source=newsletter
 
+
 ----------
 HIGHLIGHTS
 ----------
@@ -52,10 +53,12 @@ Keyboard shortcuts
 We added keyboard shortcuts to allow blazing-fast interactions. You can change colors, move selected shapes, and many
 more things.
 
-For the complete list, please read the release notes (https://riddey.com/blog/announcments/v1.0-beta-release-notes?utm_campaign=v1.0-beta-released&utm_source=newsletter).
+For the complete list, please read the release notes (https://riddey.com/blog/changes/v1.0-beta-release-notes?utm_campaign=v1.0-beta-released&utm_source=newsletter
+).
 
-Thank you,
+Cheers,
 the Riddey team
+
 
 -------------------------------------------------------------------------------------------------------------
 You received this email because you subscribed to our newsletter or because you signed up for the application.
