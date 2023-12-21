@@ -116,6 +116,19 @@
       return showToast("error", "Error!", "Something went wrong. ");
     }
   }
+  document.addEventListener("DOMContentLoaded", function() {
+    const textarea = document.getElementById("contact-form-message");
+    const characterCountDiv = document.getElementById("word-count");
+    function updateCharacterCount() {
+      let characterCount = textarea.value.length;
+      if (characterCount > 500) {
+        textarea.value = textarea.value.substring(0, 500);
+        characterCount = 500;
+      }
+      characterCountDiv.textContent = `${characterCount}/500`;
+    }
+    textarea.addEventListener("input", updateCharacterCount);
+  });
   function validateEmailInput(input) {
     const errorSpan = document.getElementById("email-error-message");
     if (input.value === "") {
@@ -244,67 +257,70 @@
     content.style.maxHeight = null;
     panel.classList.remove("panel-open");
   }
-  var cards = document.querySelectorAll(".card");
-  var dots = document.querySelectorAll(".dot");
-  var currentCardIndex = 0;
-  var touchStartX = 0;
-  var touchEndX = 0;
-  function showCard(index) {
-    cards.forEach((card, i) => {
-      if (i === index) {
-        card.classList.add("active");
-      } else {
-        card.classList.remove("active");
-      }
-    });
-  }
-  function updateDots() {
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll(".card");
+    const dots = document.querySelectorAll(".dot");
+    function updateDots(index) {
+      dots.forEach((dot, i) => {
+        dot.classList[i === index ? "add" : "remove"]("active");
+      });
+    }
+    function getCurrentCardIndex() {
+      let minDistance = Number.MAX_VALUE;
+      let closestCardIndex = 0;
+      cards.forEach((card, index) => {
+        let distance = Math.abs(card.getBoundingClientRect().left);
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestCardIndex = index;
+        }
+      });
+      return closestCardIndex;
+    }
     dots.forEach((dot, index) => {
-      if (index === currentCardIndex) {
-        dot.classList.add("active");
-      } else {
-        dot.classList.remove("active");
-      }
+      dot.addEventListener("click", () => {
+        cards[index].scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "center"
+        });
+        updateDots(index);
+      });
     });
-  }
-  function nextCard() {
-    currentCardIndex++;
-    if (currentCardIndex >= cards.length) {
-      currentCardIndex = 0;
-    }
-    showCard(currentCardIndex);
-    updateDots();
-  }
-  function prevCard() {
-    currentCardIndex--;
-    if (currentCardIndex < 0) {
-      currentCardIndex = cards.length - 1;
-    }
-    showCard(currentCardIndex);
-    updateDots();
-  }
-  function handleSwipeStart(event) {
-    touchStartX = event.touches[0].clientX;
-  }
-  function handleSwipeEnd(event) {
-    touchEndX = event.changedTouches[0].clientX;
-    if (touchStartX - touchEndX > 50) {
-      nextCard();
-    } else if (touchEndX - touchStartX > 50) {
-      prevCard();
-    }
-  }
-  showCard(currentCardIndex);
-  updateDots();
-  cards[currentCardIndex]?.classList.add("active");
-  document.addEventListener("touchstart", handleSwipeStart);
-  document.addEventListener("touchend", handleSwipeEnd);
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      currentCardIndex = index;
-      showCard(currentCardIndex);
-      updateDots();
+    document.querySelector(".plans").addEventListener("scroll", () => {
+      let currentIndex = getCurrentCardIndex();
+      updateDots(currentIndex);
     });
+    let startX;
+    const threshold = 50;
+    document.querySelector(".plans").addEventListener(
+      "touchstart",
+      (e) => {
+        startX = e.touches[0].clientX;
+      },
+      false
+    );
+    document.querySelector(".plans").addEventListener(
+      "touchend",
+      (e) => {
+        const change = startX - e.changedTouches[0].clientX;
+        if (Math.abs(change) > threshold) {
+          let currentIndex = getCurrentCardIndex();
+          if (change > 0 && currentIndex < cards.length - 1) {
+            currentIndex++;
+          } else if (change < 0 && currentIndex > 0) {
+            currentIndex--;
+          }
+          cards[currentIndex].scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "center"
+          });
+          updateDots(currentIndex);
+        }
+      },
+      false
+    );
   });
   document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll(".time span");
@@ -350,5 +366,22 @@
       });
     });
     document.getElementById("tab-month")?.click();
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll(".time span");
+    const slider = document.querySelector(".time .slider");
+    function moveSliderToTab(tab) {
+      slider.style.width = `${tab.offsetWidth}px`;
+      slider.style.left = `${tab.offsetLeft}px`;
+    }
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", function() {
+        moveSliderToTab(this);
+      });
+    });
+    const initialActiveTab = document.getElementById("tab-month");
+    if (initialActiveTab) {
+      moveSliderToTab(initialActiveTab);
+    }
   });
 })();
